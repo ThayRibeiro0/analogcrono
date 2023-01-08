@@ -7,7 +7,6 @@ import Timer from './components/Timer';
 import Clock from './components/Clock';
 
 const App = () => {
-  const [TimersState, dispatch] = useContext(TimersContext);
   const [state, setState] = useState({
     secondRatio: 0,
     minuteRatio: 0,
@@ -29,11 +28,12 @@ const setClock = () => {
     }, 1000)
   }, []);
 
+  const [TimersState, dispatch] = useContext(TimersContext);
   return (
-    <div className='clock'>
-      {TimersState.numberPages === "First" && <Clock {...state} />}
-      {TimersState.numberPages === "Last" && <Timer />}
-    </div>
+      <div>
+        {TimersState.numberPages === "First" && <div className='clock'><Clock {...state} /></div>}
+        {TimersState.numberPages === "Last" && <Timer />}
+      </div>
   )
 }
 
