@@ -9,7 +9,6 @@ import { TimersContext } from './context/analogcron';
 import Timer from './components/Timer';
 import Clock from './components/Clock';
 
-
 class App extends Component {
   state = {
     secondRatio: 0,
