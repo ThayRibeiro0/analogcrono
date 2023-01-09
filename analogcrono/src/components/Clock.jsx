@@ -43,7 +43,7 @@ function Clock({hourRatio, minuteRatio, secondRatio}){
             </div>
 
             <button onClick={() => dispatch({type: "CHANGE_PAGES"})} className='botao1'>
-            Timer ➪
+            Stopwatch ➪
             </button>
         </div>
     )

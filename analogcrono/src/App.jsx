@@ -2,7 +2,10 @@ import React, { useEffect, useState, useContext } from 'react';
 
 import './App.css';
 import './components/Clock.css';
+import './components/Timer.css';
+
 import { TimersContext } from './context/analogcron';
+
 import Timer from './components/Timer';
 import Clock from './components/Clock';
 

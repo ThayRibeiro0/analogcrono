@@ -1,0 +1,17 @@
+.container{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #1b1e20);   
+}
+
+.stopwatch {
+    height: 650px;
+    width: 380px;
+    background: rgba(225,225,225,0.05);
+    border-radius: 32px;
+    background: rgba(225,225,225,0.05);
+    box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
+}
