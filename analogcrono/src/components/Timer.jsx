@@ -12,9 +12,10 @@ const Timer = () => {
     <div className="stopwatch">
       <div className="heading-bar">
         <span>Clock</span>
-        <div className="settings-icon"> 0 </div>     </div>
+      <div className="settings-icon">⚙</div>
     </div>
-  </div>;
+  </div>
+  </div>
 };
 
 export default Timer;

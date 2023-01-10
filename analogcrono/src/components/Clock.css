@@ -1,3 +1,10 @@
+.container1 {
+    background: red;
+    border-radius: 32px;
+    width: 50vh;
+    height: 100vh
+}
+
 .clock{
     width: 350px;
     height: 350px;

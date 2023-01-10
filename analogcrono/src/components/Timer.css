@@ -14,4 +14,14 @@
     border-radius: 32px;
     background: rgba(225,225,225,0.05);
     box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
+    padding: 36px;
+}
+
+.stopwatch .heading-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
 }
