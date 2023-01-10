@@ -1,13 +1,34 @@
+.heading-bar{
+    margin-top: -10%;
+    margin-left: 20px;
+}
+
 .container1 {
-    background: red;
+    background: linear-gradient(145deg, #1b1e20, #202327);
     border-radius: 32px;
-    width: 50vh;
-    height: 100vh
+    margin-top: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53vh;
+    margin-left: -5%;
+    height: 87.0vh;
+}
+
+.clockin{
+    height: 87.0vh;
+    width: 53vh;
+    background: rgba(225,225,225,0.05);
+    border-radius: 32px;
+    background: rgba(225,225,225,0.05);
+    box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
+    padding-top: 25%;
+    padding-left: 10px;
 }
 
 .clock{
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
     border-radius: 100%;
     background: linear-gradient(145deg, #1b1e20, #202327);
     border-radius: 50%;
@@ -36,8 +57,9 @@
     margin: auto;
     border-radius: 25px;
     padding: 1px 50px;
-    margin-top: -25%;
-    background: #1e2124;
+    margin-left: 20px;
+    margin-top: -15%;
+    margin-bottom: 25px;
     border: 1px white;
     color: white;
     font-size: 10pt;
@@ -169,7 +191,7 @@
     border: none;
     display: flex;
     padding: 1px 50px;
-    margin-top: 130%;
+    margin-top: 110%;
     background: linear-gradient(90deg,
     rgb(103, 102, 102) 0%,
     rgb(239, 21, 14) 100%);

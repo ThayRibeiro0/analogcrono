@@ -11,9 +11,10 @@ const Timer = () => {
   return <div className="container">
     <div className="stopwatch">
       <div className="heading-bar">
-        <span>Clock</span>
+        <span>Stopwatch</span>
       <div className="settings-icon">⚙</div>
     </div>
+    <div className="timer-container">a</div>
   </div>
   </div>
 };

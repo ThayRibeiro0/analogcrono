@@ -14,7 +14,7 @@
     border-radius: 32px;
     background: rgba(225,225,225,0.05);
     box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
-    padding: 36px;
+    padding: 46px;
 }
 
 .stopwatch .heading-bar {
@@ -22,6 +22,32 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 22px;
     font-weight: bold;
 }
+
+.heading-bar .settings-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 236, 245);
+    box-shadow: 6px 6px 11px rgb(55, 56, 56), -6px -6px 11px #454549;
+}
+
+.timer-container{
+    height: 50vh;
+    background: red;
+    width: 50vh;
+    margin-left: -42px;
+    border-radius: 50%;
+    background-color: #1b1e20;
+    box-shadow: 5px 5px 31px #414345,
+    -5px -5px 31px rgb(248, 255, 255, 0.2);
+    padding: 10px;
+}
+
