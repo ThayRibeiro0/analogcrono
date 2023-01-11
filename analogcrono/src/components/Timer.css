@@ -84,6 +84,7 @@
 }
 
 .button-container{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
@@ -98,13 +99,44 @@
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    
+    box-shadow: 5px 5px 31px #414345,
+    -5px -5px 31px rgb(248, 255, 255, 0.2); 
+    font-size: 20px;
+    color: white;
 }
 
 .button-container .button:nth-child(1){
     margin-bottom: 12px;
-    background: green;
+    color: green;
 }
+
+.button-container .button:nth-child(1):hover{
+    background: linear-gradient(145deg, #38c470, #787b80);
+    box-shadow: 5px 5px 31px #212223,
+    -5px -5px 31px rgb(248, 255, 255, 0.2);
+    color: white;
+}
+
+
+.button-container .button:nth-child(2){
+    margin-top: 18px;
+    color: red;
+}
+
+.button-container .button:nth-child(2):hover{
+    background: linear-gradient(145deg, #c4bb38, #787b80);
+    box-shadow: 5px 5px 31px #212223,
+    -5px -5px 31px rgb(248, 255, 255, 0.2);
+    color: white;
+}
+
+.button-container .active{
+    background: #e6ecf5;
+    box-shadow: inset 5px 5px 31px #212223,
+    -5px -5px 31px rgb(248, 255, 255, 0.2);
+}
+
+
 
 .botao2{
     width: 110%;

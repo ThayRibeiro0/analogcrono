@@ -13,6 +13,16 @@ const Timer = () => {
     hours: '00',
   });
 
+  let [isStarted, setIsStarted] = useState(false);
+
+  function startTimer() {
+    if (!isStarted) 33:50
+  }
+
+  function resetTimer() {
+
+  }
+
   return (
     <div className="container">
       <div>
@@ -34,8 +44,8 @@ const Timer = () => {
         </div>
         <div className="spacer">
           <div className='button-container'>
-            <div className='button'>Start</div>
-            <div className='button'>Restart</div>            
+            <div onClick={startTimer} className='button'>Start</div>
+            <div onClick={resetTimer} className='button'>Restart</div>            
           </div>
         </div>
       </div>
