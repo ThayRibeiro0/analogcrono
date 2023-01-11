@@ -8,12 +8,15 @@
 }
 
 .stopwatch {
-    height: 650px;
-    width: 380px;
+    height: 680px;
+    width: 52%;
+    margin-bottom: 10px;    
     background: rgba(225,225,225,0.05);
     border-radius: 32px;
     background: rgba(225,225,225,0.05);
     box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
+    display: flex;
+    flex-direction: column;
     padding: 46px;
 }
 
@@ -22,13 +25,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: bold;
 }
 
 .heading-bar .settings-icon {
+    color: rgb(59, 68, 95);
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -38,7 +42,7 @@
     background: rgb(230, 236, 245);
     box-shadow: 6px 6px 11px rgb(55, 56, 56), -6px -6px 11px #454549;
 }
-/* 
+
 .timer-container{
     height: 50vh;
     background: red;
@@ -49,14 +53,54 @@
     box-shadow: 5px 5px 31px #414345,
     -5px -5px 31px rgb(248, 255, 255, 0.2);
     padding: 10px;
-} */
+}
 
-/* .timer-container {
-    height: 400px;
-    width: auto;
+.timer-container {
     border-radius: 50%;
-    background: #e6ecfc;
-    box-shadow: 18px 18px 31px rgb(212, 217, 225, 0.5),
-    -18px -18px 31px rgb(248, 255, 255, 0.5);
+    background: #242425;
     padding: 10px;
-} */
+}
+
+.timer-container .stripes {
+    border: 3px dashed white;
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-container .timer{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container .button {
+    height: 40px;
+    width: 80%;
+    color: black;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 15px;
+    
+}
+
+.button-container .button:nth-child(1){
+    margin-bottom: 12px;
+    background: green;
+}
+
