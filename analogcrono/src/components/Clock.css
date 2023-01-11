@@ -12,26 +12,27 @@
     justify-content: center;
     width: 53vh;
     margin-left: -5%;
-    height: 87.0vh;
+    height: 85.0vh;
 }
 
 .clockin{
-    height: 87.0vh;
+    height: 90.0vh;
     width: 53vh;
     background: rgba(225,225,225,0.05);
     border-radius: 32px;
     background: rgba(225,225,225,0.05);
     box-shadow: 21px 21px 39px #65686c, -1px -1px 1px rgba(225,225,225,0.05);
-    padding-top: 25%;
+    padding-top: 20%;
     padding-left: 10px;
 }
 
 .clock{
-    width: 340px;
-    height: 340px;
+    width: 370px;
+    height: 370px;
     border-radius: 100%;
     background: linear-gradient(145deg, #1b1e20, #202327);
     border-radius: 50%;
+    margin-top: 30px;
     border: 1px solid white;
     box-shadow:  -8px 8px 15px rgba(225,225,225,0.05),
        20px 20px 20px rgba(0,0,0,0.2),
@@ -204,4 +205,8 @@
     background: linear-gradient(90deg,
     rgb(103, 102, 102) 50%,
     rgb(239, 21, 14) 100%);
+}
+
+span{
+    color: white;
 }

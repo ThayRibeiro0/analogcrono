@@ -46,7 +46,7 @@ function Clock({hourRatio, minuteRatio, secondRatio}){
                 <div className="number number11"><div>|</div></div>
                 <div className="number number12"><div>12</div></div>
                 <button onClick={() => dispatch({type: "CHANGE_PAGES"})} className='botao1'>
-                Stopwatch ➪
+                Stopwatch ⇨
                 </button>
                 </div>
             </div>

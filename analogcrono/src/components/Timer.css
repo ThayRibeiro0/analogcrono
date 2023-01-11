@@ -1,7 +1,9 @@
 .container{
+    color: white;
     width: 100vh;
     height: 100vh;
     display: flex;
+    margin-left: -30px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(145deg, #1b1e20);   
@@ -9,7 +11,8 @@
 
 .stopwatch {
     height: 680px;
-    width: 52%;
+    width: 53%;
+    margin-left: -95px;
     margin-bottom: 10px;    
     background: rgba(225,225,225,0.05);
     border-radius: 32px;
@@ -47,7 +50,7 @@
     height: 50vh;
     background: red;
     width: 50vh;
-    margin-left: -42px;
+    margin-left: -34px;
     border-radius: 50%;
     background-color: #1b1e20;
     box-shadow: 5px 5px 31px #414345,
@@ -87,14 +90,13 @@
 
 .button-container .button {
     height: 40px;
-    width: 80%;
-    color: black;
+    width: 100%;
+    color: rgb(200, 132, 132);
     background: white;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
     margin-top: 15px;
     
 }
@@ -104,3 +106,26 @@
     background: green;
 }
 
+.botao2{
+    width: 110%;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: -300%;
+    font-weight: bold;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(90deg,
+    rgb(103, 102, 102) 0%,
+    rgb(239, 21, 14) 100%);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.botao2:hover{
+    background: linear-gradient(90deg,
+    rgb(103, 102, 102) 50%,
+    rgb(239, 21, 14) 100%);
+}

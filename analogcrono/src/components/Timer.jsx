@@ -15,10 +15,15 @@ const Timer = () => {
 
   return (
     <div className="container">
+      <div>
+        <button className='botao2'>
+          Clock ⇦
+        </button>
+      </div>
       <div className="stopwatch">
         <div className="heading-bar">
           <span>Stopwatch</span>
-          <div className="settings-icon">⚙</div>
+          <div className="settings-icon">⏲</div>
         </div>
         <div className="timer-container">
           <div className="stripes">
