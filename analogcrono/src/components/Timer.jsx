@@ -8,7 +8,7 @@ const Timer = () => {
   console.log(TimersState);
 
   let [time, setTime] = useState({
-    millis: '00',
+    millis: '01',
     secs: '00',
     hours: '00',
   });
