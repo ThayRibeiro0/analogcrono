@@ -13,15 +13,15 @@ const defaultState = {
 
 let startDuration = null;
 
-
 function getZeroAppendedString(num){
-  let returnValue = ('0' + num).slice(-2);
-  return returnValue;
+  return ('0' + num).slice(-2);
 }
 
 function calculateTime() {
   let millisecondsPassed = new Date().getTime() - startDuration;
-  let millisecondsTimer =  String(millisecondsPassed % 1000).substring(0, 2);
+  let millisecondsTimer =  getZeroAppendedString(
+    String(millisecondsPassed % 1000).substring(0, 2)
+  );
   let secondsPassed = Math.floor(millisecondsPassed / 1000);
   let secondsPassedTimer = Math.floor(millisecondsPassed / 1000) % 60; 
   let minutesPassed = Math.floor(secondsPassed / 60);
@@ -53,7 +53,6 @@ const Timer = () => {
   
   let [isStarted, setIsStarted] = useState(false);
   let [interval, _setInterval] = useState(null);
-  
   useEffect(() => {
     return () => {
       if (interval){
@@ -93,7 +92,7 @@ const Timer = () => {
       <div className="stopwatch">
         <div className="heading-bar">
           <span>Stopwatch</span>
-          <div className="settings-icon">⚙</div>
+          <div className="settings-icon">⏲</div>
         </div>
         <div className="timer-container">
           <div className="stripes">
@@ -104,17 +103,21 @@ const Timer = () => {
         </div>
         <div className="spacer">
           <div className='button-container'>
-            <div onClick={startTimer} 
+            <div 
+            onClick={startTimer} 
             className={`button ${isStarted ? 'active' : ''}`}
             >
               {isStarted ? 'Stop' : 'Start'}
             </div>
-            <div onClick={resetTimer} className='button'>Restart</div>            
+            <div 
+            onClick={resetTimer} 
+            className='button'>
+              Reset</div>            
           </div>
         </div>
       </div>
     </div>
-  )
-};
+  );
+}
 
 export default Timer;

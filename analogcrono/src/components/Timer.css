@@ -30,7 +30,7 @@
     justify-content: space-between;
     margin-top: 2px;
     margin-bottom: 30px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -52,21 +52,15 @@
     width: 50vh;
     margin-left: -34px;
     border-radius: 50%;
-    background-color: #1b1e20;
+    background-color: #242425;
     box-shadow: 5px 5px 31px #414345,
     -5px -5px 31px rgb(248, 255, 255, 0.2);
     padding: 10px;
 }
 
-.timer-container {
-    border-radius: 50%;
-    background: #242425;
-    padding: 10px;
-}
-
 .timer-container .stripes {
     border: 3px dashed white;
-    width: auto;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     display: flex;
@@ -75,8 +69,10 @@
 }
 
 .timer-container .timer{
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
+    font-family: monospace;
+    display: flex;
 }
 
 .spacer{
@@ -134,8 +130,6 @@
     box-shadow: inset 5px 5px 31px #212223,
     -5px -5px 31px rgb(248, 255, 255, 0.2);
 }
-
-
 
 .botao2{
     width: 110%;
