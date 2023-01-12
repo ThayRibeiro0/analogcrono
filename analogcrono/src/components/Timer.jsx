@@ -12,17 +12,6 @@ const Timer = () => {
     secs: '00',
     hours: '00',
   });
-  
-  let [isStarted, setIsStarted] = useState(false);
-
-  function startTimer() {
-      setIsStarted((bIsStarted) => !bIsStarted);
-    }
-  }
-
-  function resetTimer() {
-
-  }
 
   return (
     <div className="container">
@@ -34,7 +23,7 @@ const Timer = () => {
       <div className="stopwatch">
         <div className="heading-bar">
           <span>Stopwatch</span>
-          <div className="settings-icon">⏲</div>
+          <div className="settings-icon">⚙</div>
         </div>
         <div className="timer-container">
           <div className="stripes">
@@ -45,16 +34,8 @@ const Timer = () => {
         </div>
         <div className="spacer">
           <div className='button-container'>
-            <div 
-            onClick={startTimer} 
-            className='button ${isStarted ? 'active' : ''}'}>
-              Start
-            </div>
-            <div 
-            onClick={resetTimer} 
-            className='button'>
-              Restart
-            </div>            
+            <div className='button'>Start</div>
+            <div className='button'>Restart</div>            
           </div>
         </div>
       </div>
