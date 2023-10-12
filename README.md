@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install
+### `npm install`
 ### `npm install -g npm@10.2.0`
 ### `npm run dev`
 
