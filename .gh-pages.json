@@ -1,0 +1,8 @@
+{
+    "src": ["build/src/main.jsx"],
+    "branch": "master",
+    "repo": "https://thayribeiro0.github.io/analogcrono",
+    "add": true,
+    "message": "Deploying to GitHub Pages"
+  }
+  
