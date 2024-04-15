@@ -13,7 +13,7 @@ const TimersReducer = (pages, action) => {
     switch(action.type){
         case "CHANGE_PAGES":
             return {
-            numberPages: PAGES[1],
+            numberPages: pages.numberPages === PAGES[0] ? PAGES[1] : PAGES[0],
             };
 
         default:
